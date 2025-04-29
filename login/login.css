@@ -1,0 +1,78 @@
+*{
+    margin: none;
+    padding: none;
+    box-sizing: none;
+    font-size: 17.2px;
+}
+body{
+  background-image: url(./../img/cv_bb.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#xpto{
+    text-transform: none;
+    list-style-type: none;
+    color:brown;
+    padding: 0px 20px;
+    text-align: center;
+    /* font-size: 2rem; */
+    /* margin-top: 20px; */
+    font-weight: 900;
+  }
+  .divForm{
+    margin: auto; 
+    margin-top: 20vh;
+    width: 30vw;
+    height: 55vh;
+    border: none;
+    border: 1px solid black;
+    border-radius: 30px;
+    /* font-weight: 900; */
+    background-color: rgba(32, 31, 31, 0.8);
+    backdrop-filter: blur(1px);
+    padding: 10px 0px;
+  } 
+a{
+  color: rgba(0, 255, 255, 0.829);
+}
+  #formulario{
+    margin-left: 6vw;
+    padding: 30px 0px;
+    color: white;
+  }
+  .sep{
+    width: 250px;
+    height: 25px;
+    margin-bottom: 15px;
+    text-align: center;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    outline:none;
+    color: white;
+    background: none;
+  }
+  .sep::hover{
+    background-color: none;
+    background: transparent;
+    color: white;
+  }
+  .btn{
+    width: 100px;
+    height: 35px;
+    padding: 0px 30px;
+    background-color: rgba(182, 57, 57, 0.897);
+    border-radius: 13px;
+    margin-left: 70px;
+    margin-top: 5vh;
+    color:white;
+  }
+  input:-webkit-autofill {
+    background-color: transparent !important;
+    -webkit-box-shadow: 0 0 0 1000px transparent inset !important; /* cor de fundo escura */
+    -webkit-text-fill-color: white !important; /* cor do texto */
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+
+  

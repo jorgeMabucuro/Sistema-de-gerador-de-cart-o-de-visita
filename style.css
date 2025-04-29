@@ -1,0 +1,63 @@
+*{
+    margin:none;
+    padding: none;
+    box-sizing: border-box;
+    position:relative;
+}
+.bv{
+    width: 100%;
+    height: 100vh;
+    display: flex; 
+    justify-content: center; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+    flex-direction: row;
+    background-color:  rgba(0, 10, 32, 0.952);
+   background: radial-gradient(120deg, blue, aqua); 
+}
+.bv div{
+    width: 70%;
+    height: 80vh;
+}
+.imagem{
+    width: 100%;
+    height: 80vh;
+    background-image: url('./img/cv_azul.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.lesquerdo{
+    padding: 160px 20px;
+    color: white;
+    text-align: auto;
+    text-align: justify;
+}
+.lesquerdo .btnH{
+    align-items: center;
+}
+.visao{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: space-evenly;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 20px;
+    padding: 0px 10px;
+    /* color: aliceblue; */
+}
+
+.visao div{
+    width: 30%;
+    height: 50vh;
+    background-color: transparent;
+    box-shadow: 1px 0px 0px 0px ;
+}
+
+.v-imag>h1{
+    color: rgba(0, 10, 32, 0.952);
+    text-align: center;
+    padding: 50px 0px;
+    font-weight: 900;
+}
