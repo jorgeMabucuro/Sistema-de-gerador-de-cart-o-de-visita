@@ -9,9 +9,9 @@ h1 {
     margin-bottom: 30px;
     color: #333;
 }
-git
+
 .card-preview {
-    transform: scale(2);
+    transform: scale(3);
     transform-origin: top center;
     margin-bottom: 40px;
     display: inline-block;
@@ -26,6 +26,7 @@ git
     overflow: hidden;
     background-color: #fff;
     font-size: 12px;
+    margin: auto;
 }
 
 .left {
