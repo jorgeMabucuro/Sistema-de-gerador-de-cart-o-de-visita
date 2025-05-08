@@ -29,7 +29,13 @@
             </div>
         </div>
     </div>
-    <button onclick="downloadPDF()">Baixar PDF</button>
+    <!-- <button onclick="downloadPDF()">Baixar PDF</button> -->
+
+    <div style="display: flex; flex-direction: column; align-items: center;">
+        <div id="businessCard" class="card-preview">...</div>
+        <button onclick="downloadPDF()">Baixar PDF</button>
+    </div>
+
 
     <script>
         const params = new URLSearchParams(window.location.search);
