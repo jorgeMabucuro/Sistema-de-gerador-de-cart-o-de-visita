@@ -12,20 +12,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $admin = verificarUsuario($bd, $email, "administrador", "idadministrador");
     if ($admin && password_verify($senha, $admin['senha'])) {
         $_SESSION['idadministrador'] = $admin['idadministrador'];
-        $_SESSION['popup'] = [
-            'tipo' => 'sucesso',
-            'titulo' => 'Bem-vindo!',
-            'mensagem' => 'Login de administrador realizado com sucesso.'
-        ];
         header("Location: ./../admin/admin.php");
         exit();
     }
     $user = verificarUsuario($bd, $email, "usuario", "idusuario");
     if ($user && password_verify($senha, $user['senha'])) {
         $_SESSION['idusuario'] = $user['idusuario'];
-        $_SESSION['popup'] = [
-            'tipo' => 'sucesso', 'titulo' => 'Bem-vindo!','mensagem' => 'Login realizado com sucesso.'
-        ];
         header("Location: ./../index.php");
         exit();
     }

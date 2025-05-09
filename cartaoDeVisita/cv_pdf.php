@@ -22,13 +22,14 @@
             <div class="right">
                 <h3 id="nome"></h3>
                 <p id="cargo"></p>
-                <p id="departamento"><i class="fas fa-building"></i></p>
+                <p id="departamento">Departamento:<i class="fas fa-building"></i></p>
                 <p id="endereco"><i class="fas fa-map-marker-alt"></i></p>
                 <p id="telefone"><i class="fas fa-phone"></i></p>
                 <p id="email"><i class="fas fa-envelope"></i></p>
             </div>
         </div>
     </div>
+    <a href="./formularioDocv.html"><button>Criar novo cartão</button></a>
     <button onclick="downloadPDF()">Baixar PDF</button>
 
     <script>

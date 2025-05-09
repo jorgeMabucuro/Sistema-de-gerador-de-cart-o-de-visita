@@ -39,23 +39,23 @@
         <form id="cadastroForm" class="row g-3" action="cadastro.php" method="POST">
             <div class="col-md-6">
                 <label for="inputName" class="form-label">Nome Completo</label>
-                <input required type="text" name="nome" class="form-control" id="inputName">
+                <input  type="text" name="nome" class="form-control" id="inputName">
             </div>
             <div class="col-md-6">
               <label for="inputEmail4" class="form-label">Email</label>
-              <input required type="email" name="email" class="form-control" id="inputEmail4">
+              <input  type="email" name="email" class="form-control" id="inputEmail">
             </div>
             <div class="col-4">
               <label for="inputEndereco" class="form-label">Endereço</label>
-              <input required type="text" name="endereco" class="form-control" id="inputEndereco" >
+              <input  type="text" name="endereco" class="form-control" id="inputEndereco" >
             </div>
             <div class="col-md-4">
               <label for="inputCargo" class="form-label">Cargo</label>
-              <input required type="text" name="cargo" class="form-control" id="inputCargo">
+              <input  type="text" name="cargo" class="form-control" id="inputCargo">
             </div>
             <div class="col-md-4">
-              <label for="inputdepartamneto" class="form-label">Departamento</label>
-              <input required type="text" name="departamento" class="form-control" id="inputdepartamneto">
+              <label for="inputDepartamneto" class="form-label">Departamento</label>
+              <input  type="text" name="departamento" class="form-control" id="inputDepartamneto">
             </div>
             <div class="col-md-4">
               <label for="inputState" class="form-label">Género</label>
@@ -67,11 +67,11 @@
             </div>
             <div class="col-md-4">
               <label for="inputTelefone" class="form-label">Telefone</label>
-              <input required type="text" name="telefone" class="form-control" id="inputTelefone">
+              <input  type="text" name="telefone" class="form-control" id="inputTelefone">
             </div>
             <div class="col-4">
               <label for="inputSenha" class="form-label">Senha</label>
-              <input required type="password" name="senha" class="form-control" id="inputSenha" >
+              <input  type="password" name="senha" class="form-control" id="inputSenha" >
             </div>
             <div class="col-12">
               <button type="submit" class="btn btn-primary" id="btnSubmit">Cadastrar</button>
@@ -82,7 +82,7 @@
 
     <?php include './../popup/popup.php'; ?>
 
-    <!-- <script src="js/vfc.js"></script> -->
+    <script src="./../js/vfc.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>

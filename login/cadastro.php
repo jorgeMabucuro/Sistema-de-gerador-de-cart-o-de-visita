@@ -16,11 +16,11 @@
             empty($nome) || empty($email) || empty($endereco) || empty($cargo) ||
             empty($telefone) || empty($departamento) || empty($_POST['senha'])
         ) {
-            $_SESSION['popup'] = [
-                'tipo' => 'erro',
-                'titulo' => 'Erro',
-                'mensagem' => 'Por favor, preencha todos os campos obrigatórios.'
-            ];
+            // $_SESSION['popup'] = [
+            //     'tipo' => 'erro',
+            //     'titulo' => 'Erro',
+            //     'mensagem' => 'Por favor, preencha todos os campos obrigatórios.'
+            // ];
             header('Location: formularioCadastro.php');
             exit();
         }
@@ -36,21 +36,21 @@
         }
     
         if (strlen($telefone) !== 9 || !is_numeric($telefone)) {
-            $_SESSION['popup'] = [
-                'tipo' => 'erro',
-                'titulo' => 'Telefone inválido',
-                'mensagem' => 'O telefone deve ter exatamente 9 dígitos numéricos.'
-            ];
+            // $_SESSION['popup'] = [
+            //     'tipo' => 'erro',
+            //     'titulo' => 'Telefone inválido',
+            //     'mensagem' => 'O telefone deve ter exatamente 9 dígitos numéricos.'
+            // ];
             header('Location: formularioCadastro.php');
             exit();
         }
     
         if ($genero == 'escolha...') {
-            $_SESSION['popup'] = [
-                'tipo' => 'erro',
-                'titulo' => 'Gênero não selecionado',
-                'mensagem' => 'Por favor, selecione seu gênero.'
-            ];
+            // $_SESSION['popup'] = [
+            //     'tipo' => 'erro',
+            //     'titulo' => 'Gênero não selecionado',
+            //     'mensagem' => 'Por favor, selecione seu gênero.'
+            // ];
             header('Location: formularioCadastro.php');
             exit();
         }

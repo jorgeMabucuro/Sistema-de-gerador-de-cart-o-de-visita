@@ -1,57 +1,39 @@
 $(document).ready(function () {
     $('#cadastroForm').on('submit', function (e) {
-        let isValid = true;
-        let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        let telefonePattern = /^[0-9\s\-\+\(\)]+$/;
+        e.preventDefault();
 
-        // Verifica campos vazios
-        $('#cadastroForm input').each(function () {
-            if ($(this).val().trim() === '') {
-                alert('Por favor, preencha o campo: ' + $(this).prev('label').text());
-                $(this).focus();
-                isValid = false;
-                return false;
+        $('.error').remove();
+        $('input, select').css('border', '');
+
+        let hasError = false;
+
+        function validateField(selector, message) {
+            let field = $(selector);
+            if (field.val().trim() === '') {
+                field.css('border', '1px solid red');
+                field.after(`<div class="error" style="color:red; font-size: 12px;">${message}</div>`);
+                hasError = true;
             }
-        });
-
-        if (!isValid) {
-            e.preventDefault();
-            return;
         }
 
-        // Validação de e-mail
-        const email = $('#inputEmail4').val().trim();
-        if (!emailPattern.test(email)) {
-            alert('Por favor, insira um e-mail válido.');
-            $('#inputEmail4').focus();
-            e.preventDefault();
-            return;
+        validateField('#inputName', 'Preencha este campo');
+        validateField('#inputEmail', 'Preencha este campo');
+        validateField('#inputCargo', 'Preencha este campo');
+        validateField('#inputEndereco', 'Preencha este campo');
+        validateField('#inputDepartamneto', 'Preencha este campo');
+        validateField('#inputSenha', 'Preencha este campo');
+        validateField('#inputTelefone', 'Preencha este campo');
+        validateField('#inputState', 'Selecione o seu genero')
+
+        let telefone = $('#inputTelefone').val().trim();
+        if (telefone !== '' && !/^\d{9}$/.test(telefone)) {
+            $('#inputTelefone').css('border', '1px solid red');
+            $('#inputTelefone').after('<div class="error" style="color:red; font-size: 12px;">Telefone deve conter exatamente 9 dígitos</div>');
+            hasError = true;
         }
 
-        // Validação do gênero
-        const genero = $('#inputState').val();
-        if (genero === 'escolha...') {
-            alert('Por favor, selecione o gênero.');
-            $('#inputState').focus();
-            e.preventDefault();
-            return;
-        }
-
-        // Validação de telefone
-        const telefone = $('#inputTelefone').val().trim();
-        if (!telefonePattern.test(telefone)) {
-            alert('Por favor, insira um telefone válido.');
-            $('#inputTelefone').focus();
-            e.preventDefault();
-            return;
-        }
-
-        // Validação de senha
-        const senha = $('#inputSenha').val().trim();
-        if (senha.length < 6) {
-            alert('A senha deve ter pelo menos 6 caracteres.');
-            $('#inputSenha').focus();
-            e.preventDefault();
+        if (!hasError) {
+            this.submit(); 
         }
     });
 });

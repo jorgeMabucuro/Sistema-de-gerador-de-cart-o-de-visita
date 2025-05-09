@@ -29,7 +29,7 @@
             <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
               <li><a href="./../index.php" class="nav-link px-2 link-secondary">Home</a></li>
               <li><a href="./cartaoDeVisita.php" class="nav-link px-2 link-body-emphasis">Cartão de visita</a></li>
-              <li><a href="./../usuario/usuario.php" class="nav-link px-2 link-body-emphasis">Usuario</a></li>
+              <!-- <li><a href="./../usuario/usuario.php" class="nav-link px-2 link-body-emphasis">Usuario</a></li> -->
               <li><a href="./../admin/admin.php" class="nav-link px-2 link-body-emphasis">Administrador</a></li>
             </ul>
     
