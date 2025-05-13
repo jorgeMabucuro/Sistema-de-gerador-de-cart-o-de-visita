@@ -23,12 +23,18 @@ $(document).ready(function () {
         validateField('#inputDepartamneto', 'Preencha este campo');
         validateField('#inputSenha', 'Preencha este campo');
         validateField('#inputTelefone', 'Preencha este campo');
-        validateField('#inputState', 'Selecione o seu genero')
 
         let telefone = $('#inputTelefone').val().trim();
         if (telefone !== '' && !/^\d{9}$/.test(telefone)) {
             $('#inputTelefone').css('border', '1px solid red');
             $('#inputTelefone').after('<div class="error" style="color:red; font-size: 12px;">Telefone deve conter exatamente 9 dígitos</div>');
+            hasError = true;
+        }
+
+        let genero = $('#inputState').val();
+        if (genero === 'escolha...') {
+            $('#inputState').css('border', '1px solid red');
+            $('#inputState').after('<div class="error" style="color:red; font-size: 12px;">Selecione o seu gênero</div>');
             hasError = true;
         }
 
