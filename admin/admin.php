@@ -17,7 +17,7 @@ if (!isset($_SESSION['idadministrador'])) {
     <link rel="stylesheet" href="admin.css">
 </head>
 <body>
-    <header class="p-3 mb-3 border-bottom">
+    <header class="p-3  border-bottom">
         <div class="container">
           <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
             <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
@@ -53,7 +53,8 @@ if (!isset($_SESSION['idadministrador'])) {
         </div>
       </header>
       
-      <section>
+      <section >
+        <div class="sectionn">
         <h1>Administrador</h1>
         <div class="cadastro">
           <h3>Cadastro de administrador</h3>
@@ -75,8 +76,18 @@ if (!isset($_SESSION['idadministrador'])) {
             </div>
           </form>
         </div>
+        </div>
       </section>
-    
+
+    <!-- footer das paginas -->
+      <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3  border-top">
+          <p class="col-md-4 mb-0 text-body-secondary">XPTO&copy; 2025. Jorge Mabucuro</p>
+      
+          <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+          </a>
+      </footer>
 
       
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

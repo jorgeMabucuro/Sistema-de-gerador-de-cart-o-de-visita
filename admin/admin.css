@@ -1,6 +1,11 @@
 *{
     margin: 0;
+    color: white;
     padding: 0;
+}
+.sectionn{
+    height: 80vh;
+    background-color: #0C162A;
 }
 h1{
     text-align: left;

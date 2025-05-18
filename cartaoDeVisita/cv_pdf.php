@@ -22,10 +22,10 @@
             <div class="right">
                 <h3 id="nome"></h3>
                 <p id="cargo"></p>
-                <p id="departamento">Departamento:<i class="fas fa-building"></i></p>
-                <p id="endereco"><i class="fas fa-map-marker-alt"></i></p>
-                <p id="telefone"><i class="fas fa-phone"></i></p>
-                <p id="email"><i class="fas fa-envelope"></i></p>
+                <p id="departamento">Departamento:</p>
+                <p id="endereco">Endereço</p>
+                <p id="telefone">Telefone:</p>
+                <p id="email"></p>
             </div>
         </div>
     </div>

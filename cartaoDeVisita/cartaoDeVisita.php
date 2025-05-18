@@ -17,7 +17,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
-    <header class="p-3 mb-3 border-bottom">
+    <header class="p-3  border-bottom">
         <div class="container">
           <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
             <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
@@ -56,14 +56,24 @@
         <div class="cv">
 
             <div class="cvE">
-                <h1>Faça seu cartao</h1>
-                <p>Personileze o seu cartão de visita</p>
+                <h1>Faça seu cartão de visita</h1>
+                <p>Personalize seu cartão de visita e destaque-se no mercado com estilo e profissionalismo.</p>
                 <a href="./formularioDoCV.html"><button type="button" class="btn btn-warning">Criar Cartão</button></a>
             </div>
             <div class="cv_i">
             </div>
         </div>
     </main>
+
+      <!-- footer das paginas -->
+      <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3  border-top">
+          <p class="col-md-4 mb-0 text-body-secondary">XPTO&copy; 2025. Jorge Mabucuro</p>
+      
+          <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
+          </a>
+      </footer>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
